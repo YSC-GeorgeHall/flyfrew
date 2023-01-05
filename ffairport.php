@@ -56,7 +56,8 @@
     <h1 style>FlyFrew Airport</h1>
         <div class="row">
         <div class="col-md-12">
-        <h4>FlyFrew Airport uses existing airport partners to integrate and seemlessly connect them with travellers</h4></br>
+        <h4>FlyFrew Airport using existing partners, moderisation, and gets to know the airport traveller, to increase satisifaction and revenue opportunities
+        </h4></br>
         <a href="ffairport-demo.php" class="btn btn-outline-primary" role="button" aria-pressed="true">FlyFrew Airport Demo</a>
 </div>  
 </div>
