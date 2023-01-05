@@ -132,7 +132,7 @@
   <div class="card-body">
     <h5 class="card-title">FlyFrew Corporate</h5>
     <p class="card-text">Corporate travellers are vital to an airport ecosystem. Offer the corporate traveller the complete booking tool, from start to finish</p>
-    <a href="ffcorporate" class="btn btn-outline-primary" role="button" aria-pressed="true">Learn more about FlyFrew Corporate</a>
+    <a href="ffcorporate.php" class="btn btn-outline-primary" role="button" aria-pressed="true">Learn more about FlyFrew Corporate</a>
   </div>
 </div>
   </div>
