@@ -30,17 +30,17 @@
       <div class="d flex justify-content-end">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">About Us</a>
+          <a class="nav-link active" aria-current="page" href="aboutus.php">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Partners</a>
+          <a class="nav-link" href="partners.php">Partners</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link">News</a>
+          <a class="nav-link" href="news.php">News</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link">Get In Touch</a>
+          <a class="nav-link" href="getintouch.php">Get In Touch</a>
         </li>
       </ul>
     </div>
@@ -76,7 +76,7 @@
   <div class="card-body">
     <h5 class="card-title">FlyFrew Airport</h5>
     <p class="card-text">Seemless and integrated experiences offering travellers the ultimate airport experience, at their finger tips</p>
-    <button type="button" class="btn btn-outline-primary">Learn more about FlyFrew Airport</button>
+    <a href="ffairport.php" class="btn btn-outline-primary" role="button" aria-pressed="true">Learn more about FlyFrew Airport</a>
 
   </div>
 </div>
@@ -87,8 +87,7 @@
   <div class="card-body">
     <h5 class="card-title">FlyFrew Lounge</h5>
     <p class="card-text">Provide travllers with the ultimate in-lounge experience, giving them everything they need in the palm of their hands</p>
-    <button type="button" class="btn btn-outline-primary">Learn more about FlyFrew Lounge</button>
-
+    <a href="fflounge.php" class="btn btn-outline-primary" role="button" aria-pressed="true">Learn more about FlyFrew Lounge</a>
   </div>
 </div>
   </div>
@@ -98,8 +97,7 @@
   <div class="card-body">
     <h5 class="card-title">FlyFrew Transfers</h5>
     <p class="card-text">Travelling doesnt start at the airport, it starts at home, give your travellers the ultimate choice in getting to the airport</p>
-
-        <button type="button" class="btn btn-outline-primary">Learn more about FlyFrew Transfers</button>
+    <a href="fftransfers.php" class="btn btn-outline-primary" role="button" aria-pressed="true">Learn more about FlyFrew Transfers</a>
   </div>
 </div>
   </div>
@@ -109,7 +107,7 @@
   <div class="card-body">
     <h5 class="card-title">FlyFrew Corporate</h5>
     <p class="card-text">Corporate travellers are vital to an airport ecosystem. Offer the corporate traveller the complete booking tool, from start to finish</p>
-    <button type="button" class="btn btn-outline-primary">Learn more about FlyFrew Corporate</button>
+    <a href="ffcorporate" class="btn btn-outline-primary" role="button" aria-pressed="true">Learn more about FlyFrew Corporate</a>
   </div>
 </div>
   </div>
@@ -120,8 +118,8 @@
     
 
     <ul class="nav col-md-4 justify-content-start">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About Us</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">News</a></li>
+      <li class="nav-item"><a href="aboutus.php" class="nav-link px-2 text-muted">About Us</a></li>
+      <li class="nav-item"><a href="news.php" class="nav-link px-2 text-muted">News</a></li>
     </ul>
 
 </br>
