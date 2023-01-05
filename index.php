@@ -47,10 +47,15 @@
   <div class="row flex align-items-center">
     
     <div class="col-md-6">
-    <h1 style="text-align: center;">A Suite airport products</h1>
+    <h1 style>Simple, digitalised travel for all</h1>
         <div class="row">
         <div class="col-md-12">
-        <h4>The future of the airport is a connected and fully integrated experience, offering travellers a full range of services digitally. </h4>
+        <h4>The future of the travel is a connected and fully integrated experience, giving travellers ultimate choice and flexibility</h4></br>
+        <small>See our list of products that can enhance your travellers experiences and increase your revenue growth</small></br>
+        <button type="button" class="btn btn-outline-primary">FlyFrew Airport</button>
+        <button type="button" class="btn btn-outline-primary">FlyFrew Lounge</button>
+        <button type="button" class="btn btn-outline-primary">FlyFrew Corporate</button>
+        <button type="button" class="btn btn-outline-primary">FlyFrew Transfers</button>
 </div>  
 </div>
 
@@ -58,6 +63,15 @@
     <div class="col-md-6">
       <img src="images/banner1.png" class="img-fluid" alt="Responsive image">
     </div>
+  </div>
+</div>
+
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="images/airport.png" class="img-fluid" alt="Responsive image" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
 
