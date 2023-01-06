@@ -68,10 +68,10 @@
             <div class="col-md-4">
                <h2>Moderisation</h2>
                <br>
-               <p style="font: message-box;">IIn a world where everything is available at your fingers tips, travelling is still the odd one out. Travellers are still required to hold multiple different documents, show these multiple times, walk through a mariad of shops and spend time trying to find things in a complex stressful environment. FlyFrew Airport wants to change this.</p>
+               <p style="font: message-box;">In a world where everything is available at your fingers tips, travelling is still the odd one out. Travellers are still required to hold multiple different documents, show these multiple times, walk through a mariad of shops and spend time trying to find things in a complex stressful environment. FlyFrew Airport wants to change this.</p>
             </div>
             <div class="col-md-4">
-               <h2>Know the Airport User</h2>
+               <h2>Personalisation</h2>
                <br>
                <p style="font: message-box;">Airports should know their travellers (airlines do), they should know when a traveller is coming, what they are purpose is, and what they expect from their time at the airport. Not only this, people that are at the airport not to travel are forgotten, you may be dropping off, picking up, going to work, and we want to fix this. Airports should hold a serious relationship with those that attend the airport, and understand the needs of each and everyone of them.</p>
             </div>
