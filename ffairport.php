@@ -60,7 +60,7 @@
                   </div>
                </div>
                <div class="col-md-6">
-                  <img src="images/airport.png" class="img-fluid" alt="Responsive image">
+                  <img src="images/airport.png" class="img-fluid" alt="Responsive image" style="height:400px; padding-top: 20px;">
                </div>
             </div>
          </div>
@@ -90,24 +90,42 @@
                   <div class="card-body">
                      <h5 class="card-title">Get In Touch</h5>
                      <p class="card-text">Provide your information for us to get in touch with you regarding our products</p>
-                     <form method="post" action="insert.php">
-  <label for="first_name">First Name:</label><br>
-  <input type="text" id="first_name" name="first_name"><br>
-  <label for="last_name">Last Name:</label><br>
-  <input type="text" id="last_name" name="last_name"><br>
-  <label for="company">Company:</label><br>
-  <input type="text" id="company" name="company"><br>
-  <label for="extra_details">Extra Details:</label><br>
-  <textarea id="extra_details" name="extra_details"></textarea><br>
-  <input type="checkbox" id="airport" name="options[]" value="airport">
-  <label for="airport">Airport</label><br>
-  <input type="checkbox" id="lounge" name="options[]" value="lounge">
-  <label for="lounge">Lounge</label><br>
-  <input type="checkbox" id="transfers" name="options[]" value="transfers">
-  <label for="transfers">Transfers</label><br>
-  <input type="checkbox" id="corporate" name="options[]" value="corporate">
-  <label for="corporate">Corporate</label><br>
-  <input type="submit" value="Submit">
+                     <form method="post" action="insert.php" class="form-inline">
+                        <div class="row">
+  <div class="form-group col-md-6">
+    <label for="first_name" class="sr-only">First Name:</label>
+    <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name">
+  </div>
+  <div class="form-group col-md-6">
+    <label for="last_name" class="sr-only">Last Name:</label>
+    <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name">
+  </div>
+      </div>
+      <div class="row">
+  <div class="form-group col-md-6">
+    <label for="company" class="sr-only">Company:</label>
+    <input type="text" class="form-control" id="company" name="company" placeholder="Company">
+  </div>
+  <div class="form-group col-md-6">
+    <label for="extra_details" class="sr-only">Extra Details:</label>
+    <textarea class="form-control" id="extra_details" name="extra_details" placeholder="Extra Details"></textarea>
+  </div>
+      </div>
+  <div class="row">
+  <div class="form-group col-md-6">
+    <input type="checkbox" id="airport" name="options[]" value="airport">
+    <label for="airport">Airport</label>
+    <input type="checkbox" id="lounge" name="options[]" value="lounge">
+    <label for="lounge">Lounge</label>
+    <input type="checkbox" id="transfers" name="options[]" value="transfers">
+    <label for="transfers">Transfers</label>
+    <input type="checkbox" id="corporate" name="options[]" value="corporate">
+    <label for="corporate">Corporate</label>
+  </div>
+  <div class="form-group col-md-6">
+    <input type="submit" class="btn btn-primary" value="Submit">
+  </div>
+  </div>
 </form> 
 
                   </div>

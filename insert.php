@@ -1,12 +1,6 @@
 <?php
 
-// Connect to the database
-$conn = mysqli_connect('localhost', 'root', '', 'flyfrew');
-
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
+include_once 'config.php';
 
 // Get form data
 $first_name = mysqli_real_escape_string($conn, $_POST['first_name']);
@@ -30,4 +24,3 @@ if (mysqli_query($conn, $query)) {
 
 // Close the connection
 mysqli_close($conn);
-?>

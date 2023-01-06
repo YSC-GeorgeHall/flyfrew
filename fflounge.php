@@ -53,17 +53,18 @@
   <div class="row flex align-items-center">
     
     <div class="col-md-6">
-    <h1 style>FlyFrew Lounge</h1>
+    <h1 style>Simple, digitalised travel for all</h1>
         <div class="row">
         <div class="col-md-12">
-        <h4>FlyFrew Airport uses existing airport partners to integrate and seemlessly connect them with travellers</h4></br>
-        <a href="fflounge-demo.php" class="btn btn-outline-primary" role="button" aria-pressed="true">FlyFrew Lounge Demo</a>
+        <h4>The future of the travel is a connected and fully integrated experience, giving travellers ultimate choice and flexibility</h4></br>
+        <small>See our list of products that can enhance your travellers experiences and increase your revenue growth</small></br>
+
 </div>  
 </div>
 
     </div>
     <div class="col-md-6">
-      <img src="images/lounge.png" class="img-fluid" alt="Responsive image">
+      <img src="images/banner1.png" class="img-fluid" alt="Responsive image">
     </div>
   </div>
 </div>
