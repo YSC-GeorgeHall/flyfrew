@@ -18,7 +18,9 @@
         font-family: 'Rubik', sans-serif;
     }
 
-    .col-md-6, .col-md-4 , .col-md-3{
+    .col-md-6,
+    .col-md-4,
+    .col-md-3 {
         padding-top: 15px;
     }
     </style>
@@ -47,23 +49,19 @@
             </div>
         </div>
     </nav>
-
-
-
     <!-- start of container-->
     <div class="container">
         <div class="row">
             <div class="col-md-3">
                 <div class="card">
-                    
+
                     <div class="card-body">
                         <h5 class="card-title">WIFI</h5>
                         <p class="card-text">Network Name: FlyFrewDemo<br>Network Name: Thisisonlyademo</p>
-                        
+
                     </div>
                 </div>
             </div>
-
             <div class="col-md-6">
                 <div class="card">
                     <img src="images/lounge_demo_images/lounge_banner.png" class="card-img-top" alt="...">
@@ -105,7 +103,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="col-md-4">
                 <div class="card">
                     <img src="..." class="card-img-top" alt="...">
@@ -116,7 +113,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="col-md-4">
                 <div class="card">
                     <img src="..." class="card-img-top" alt="...">
@@ -127,8 +123,7 @@
                     </div>
                 </div>
             </div>
-</div>
-
+        </div>
         <!-- Footer Start -->
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
             <ul class="nav col-md-4 justify-content-start">
