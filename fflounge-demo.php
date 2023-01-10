@@ -29,7 +29,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="fflounge-demo">PJH Airport Lounge</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -37,13 +37,22 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" aria-current="page" href="orderfb.php">Order to Table</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="dutyfree.php">Buy Duty free</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link" href="bookservice.php">Book a Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="flightboard.php">Flight Board</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.php">Give Feedback</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="loungeinfo.php">Lounge Info</a>
                     </li>
                 </ul>
             </div>
@@ -51,93 +60,98 @@
     </nav>
     <!-- start of container-->
     <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="card">
-
-                    <div class="card-body">
+        <div class="row"><!-- start of row-->
+            <div class="col-md-12"><!-- start of col-->
+                <div class="card" style="border: none;"><!-- start of card-->
+                    <div class="card-body"><!-- start of card body-->
                         <h5 class="card-title">WIFI</h5>
                         <p class="card-text">Network Name: FlyFrewDemo<br>Network Name: Thisisonlyademo</p>
+                    </div><!-- end of card body-->
+                </div><!-- end of card--> 
+            </div><!-- end of col-->
+        </div><!-- end of row-->
+        <div class="row"><!-- start of row-->
+            <div class="col-md-4"><!-- start of col-->
+                <a href="www.google.co.uk">
+                    <div class="card"><!-- start of card-->
+                        <img src="images/lounge_demo_images/lounge_banner2.png" class="card-img-top" alt="...">
+                        <div class="card-body"><!-- start of card body-->
+                            <h5 class="card-title">Order to Table</h5>
+                </a>
+                <p class="card-text">Multiple different food and drink offerings are available to be delivered to your
+                    table. View our menu, order and one of our staff will be over shortly with your</p>
+                        </div><!-- end of card body-->
+                    </div><!-- end of card--> 
+            </div><!-- end of col-->
+            <div class="col-md-4"><!-- start of col-->
+                <a href="www.google.co.uk">
+                    <div class="card"><!-- start of card-->
+                    <img src="images/lounge_demo_images/dutyfree.png" class="card-img-top" alt="..." style="height: 196px;">
+                        <div class="card-body"><!-- start of card body-->
+                            <h5 class="card-title">Buy Duty Free</h5>
+                </a>
+                <p class="card-text">Browse the airport stores without leaving the lounge. You can order items to bedelivered to
+            you in-lounge or to your gate. Why not save carrying them, and have them sent to your home address? </p>
+                        </div><!-- end of card body-->
+                    </div><!-- end of card--> 
+            </div><!-- end of col-->
+            <div class="col-md-4"><!-- start of col-->
+                <a href="www.google.co.uk">
+                    <div class="card"><!-- start of card-->
+                    <img src="images/lounge_demo_images/online_booking.png" class="card-img-top" alt="..." style="height: 196px;">
+                        <div class="card-body"><!-- start of card body-->
+                            <h5 class="card-title">Book a Service</h5>
+                </a>
+                <p class="card-text">In the lounge we have multiple services that you can use to enhance your experience. Click
+            here to book a shower, a 15 minute massage, or for those with extra time book a 30 or 60 minute massage</p>
+                        </div><!-- end of card body-->
+                    </div><!-- end of card--> 
+            </div><!-- end of col-->
+        </div><!-- end of row-->
+        <div class="row"><!-- start of row-->
+            <div class="col-md-4"><!-- start of col-->
+                <a href="www.google.co.uk">
+                    <div class="card"><!-- start of card-->
+                  <!--  <img src="images/lounge_demo_images/dutyfree.png" class="card-img-top" alt="..." style="height: 196px;">-->
+                        <div class="card-body"><!-- start of card body-->
+                            <h5 class="card-title">Flight Board</h5>
+                </a>
+                <p class="card-text">Find your flight and see the latest information </p>
+                        </div><!-- end of card body-->
+                    </div><!-- end of card--> 
+            </div><!-- end of col-->
+            <div class="col-md-4"><!-- start of col-->
+                <a href="www.google.co.uk">
+                    <div class="card"><!-- start of card-->
+                  <!--  <img src="images/lounge_demo_images/dutyfree.png" class="card-img-top" alt="..." style="height: 196px;">-->
+                        <div class="card-body"><!-- start of card body-->
+                            <h5 class="card-title">Give Feedback</h5>
+                </a>
+                <p class="card-text">Good or bad, let us know how your visit was </p>
+                        </div><!-- end of card body-->
+                    </div><!-- end of card--> 
+            </div><!-- end of col-->
+            <div class="col-md-4"><!-- start of col-->
+                <a href="www.google.co.uk">
+                    <div class="card"><!-- start of card-->
+                  <!--  <img src="images/lounge_demo_images/dutyfree.png" class="card-img-top" alt="..." style="height: 196px;">-->
+                        <div class="card-body"><!-- start of card body-->
+                            <h5 class="card-title">Lounge Info</h5>
+                </a>
+                <p class="card-text">Find out more about the lounge</p>
+                        </div><!-- end of card body-->
+                    </div><!-- end of card--> 
+            </div><!-- end of col-->
+        </div><!-- end of row-->
 
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card">
-                    <img src="images/lounge_demo_images/lounge_banner.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Order to Table</h5>
-                        <p class="card-text">Order food and Drinks to your table</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Buy Duty Free</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Book a Service</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">lounge Info</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">lounge Info</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">lounge Info</h5>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer Start -->
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <ul class="nav col-md-4 justify-content-start">
-                <li class="nav-item"><a href="aboutus.php" class="nav-link px-2 text-muted">About Us</a></li>
-                <li class="nav-item"><a href="news.php" class="nav-link px-2 text-muted">News</a></li>
-            </ul>
-            </br>
-            <a href="https://www.w3schools.com"> <i class="fa-brands fa-facebook fa-2xl "
-                    style="padding-right: 5px;"></i> </a>
-            <a href="https://www.w3schools.com"> <i class="fa-brands fa-twitter fa-2xl"
-                    style="padding-right: 5px;"></i></a>
-            <!-- Footer End -->
-        </footer>
-        <!-- end of container-->
+    <!-- Footer Start -->
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+<p>
+    All services shown are demo services that are available to all customers that work with FlyFrew. If you wish to learn more about how we can help your lounge please <a href="getintouch.php">contact us</a>
+</p>
+        <!-- Footer End -->
+    </footer>
+    <!-- end of container-->
     </div>
     <script>
     function myFunction() {
