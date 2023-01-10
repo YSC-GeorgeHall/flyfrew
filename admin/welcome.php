@@ -64,9 +64,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
           Welcome, <?php echo htmlspecialchars($_SESSION["username"]); ?></span>
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Profile</a></li>
-            <li><a class="dropdown-item" href="#">Current Listings</a></li>
-            <li><hr class="dropdown-divider"></li>
+
             <li><a class="dropdown-item" href="reset-password.php">Reset Password</a></li>
             <li><a class="dropdown-item" href="logout.php">Log Out</a></li>
           </ul>
