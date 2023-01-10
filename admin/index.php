@@ -118,23 +118,44 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
       </ul>
       <div class="d flex justify-content-end">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="aboutus.php">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="partners.php">Partners</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="news.php">News</a>
-        </li>
+      <li class="nav-item">
+                        <a class="nav-link" href="sellabooking.php">Sell My Booking</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="alllistings.php">View Listings</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="lastmin.php">Last Minute</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="pricing.php">Pricing</a>
+                     </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="getintouch.php">Get In Touch</a>
+                     <?php if( isset($_SESSION['username']) && !empty($_SESSION['username']) )
+                    {
+                    ?>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Welcome, <?php echo htmlspecialchars($_SESSION["username"]); ?></span>
+          </a>
+          <ul class="dropdown-menu">
+
+            <li><a class="dropdown-item" href="reset-password.php">Reset Password</a></li>
+            <li><a class="dropdown-item" href="logout.php">Log Out</a></li>
+          </ul>
         </li>
-      </ul>
-    </div>
-    </div>
-  </div>
+                <?php }else{ ?>
+                  
+                  <li class="nav-item">
+                        <a class="nav-link" href="registration.php" >Register</a>
+                     </li>
+                  <li class="nav-item">
+                        <a class="nav-link" href="login.php" >Log In</a>
+                     </li>
+                <?php } ?>
+                  </ul>
+               </div>
+            </div>
 </nav>
 <!-- start of container--><div class="container">
 
@@ -165,17 +186,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         </form>
 
 <!-- Footer Start -->
-<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-    
 
-    <ul class="nav col-md-4 justify-content-start">
-      <li class="nav-item"><a href="aboutus.php" class="nav-link px-2 text-muted">About Us</a></li>
-      <li class="nav-item"><a href="news.php" class="nav-link px-2 text-muted">News</a></li>
-    </ul>
-
-</br>
-<a href ="https://www.w3schools.com">   <i class="fa-brands fa-facebook fa-2xl " style="padding-right: 5px;"></i> </a>
-<a href ="https://www.w3schools.com">     <i class="fa-brands fa-twitter fa-2xl" style="padding-right: 5px;"></i></a>
   <!-- Footer End --></footer>
 
 <!-- end of container--></div>
