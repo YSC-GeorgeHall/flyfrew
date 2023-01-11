@@ -7,7 +7,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: index.php");
     exit;
 }
+
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -42,7 +44,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.php">FlyFrew CMS</a>
+            <a class="navbar-brand" href="index.php">FlyFrew CMS - Managing Order to Table for PJH Lounge</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -53,7 +55,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 <div class="d flex justify-content-end">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="sellabooking.php">Manage Order to Table</a>
+                            <a class="nav-link active" href="pjh-cms-ordertotablecontent.php">Manage Order to Table</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="alllistings.php">Manage Duty Free</a>
@@ -99,80 +101,46 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <!-- start of container-->
     <div class="container">
 
-        <div class="row">
 
-            <div class="col-md-2">
-                <div class="card ">
-                    <h5 class="card-header ">Order to table</h5>
-                    <div class="card-body">
-                        <a href="pjh-cms.php" class="btn btn-primary">Update Content</a>
-                    </div>
-                    <div class="card-footer text-muted">
-                    Updated 2 days ago
-                    </div>
-                </div>
-            </div>
+    <form method="post" action="submit-item.php">
+  <label>Item Name:</label>
+  <input type="text" id="itemName" name="itemName">
 
-            <div class="col-md-2">
-                <div class="card ">
-                    <h5 class="card-header ">Duty Free</h5>
-                    <div class="card-body">
-                        <a href="pjh-cms.php" class="btn btn-primary">Update Content</a>
-                    </div>
-                    <div class="card-footer text-muted">
-                    Updated 2 days ago
-                    </div>
-                </div>
-            </div>
+  <h3>Options:</h3>
+  <div id="optionsContainer"></div>
 
-            <div class="col-md-2">
-                <div class="card ">
-                    <h5 class="card-header ">Book a Service</h5>
-                    <div class="card-body">
-                        <a href="pjh-cms.php" class="btn btn-primary">Update Content</a>
-                    </div>
-                    <div class="card-footer text-muted">
-                    Updated 2 days ago
-                    </div>
-                </div>
-            </div>
-        
+  <button type="button" onclick="addOption()">Add Option</button>
+  <input type="submit" value="Submit">
+</form>
+
+<script>
+  function addOption() {
+    const optionsContainer = document.getElementById("optionsContainer");
+    const optionInput = document.createElement("input");
+    optionInput.type = "text";
+    optionInput.name = "option[]";
+    optionsContainer.appendChild(optionInput);
+  }
+</script>
 
 
-<div class="col-md-2">
-    <div class="card ">
-        <h5 class="card-header ">Give Feedback</h5>
-        <div class="card-body">
-            <a href="pjh-cms.php" class="btn btn-primary">Update Content</a>
+
+
+
+
+
+            <!-- Footer Start -->
+
+            <!-- Footer End -->
+            </footer>
+            <!-- end of container-->
         </div>
-        <div class="card-footer text-muted">
-        Updated 2 days ago
-        </div>
-    </div>
-</div>
 
 
-<div class="col-md-2">
-    <div class="card ">
-        <h5 class="card-header ">Lounge Info</h5>
-        <div class="card-body">
-            <a href="pjh-cms.php" class="btn btn-primary">Update Content</a>
-        </div>
-        <div class="card-footer text-muted">
-            Updated 2 days ago
-        </div>
-    </div>
-</div>
-        <!-- Footer Start -->
 
-        <!-- Footer End -->
-        </footer>
-
-        <!-- end of container-->
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
-    </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+        </script>
 </body>
 
 </html>

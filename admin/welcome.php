@@ -34,7 +34,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 <nav class="navbar navbar-expand-lg bg-light">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.php">FlyFrew CMS</a>
+    <a class="navbar-brand" href="index.php">FlyFrew CMS - PJH</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -43,18 +43,21 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
       </ul>
       <div class="d flex justify-content-end">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-      <li class="nav-item">
-                        <a class="nav-link" href="sellabooking.php">Sell My Booking</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="alllistings.php">View Listings</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="lastmin.php">Last Minute</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="pricing.php">Pricing</a>
-                     </li>
+
+      <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Manage Airports</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">PJH</a></li>
+
+    </ul>
+  </li>
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Manage Lounges</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="pjh-cms-pjhlounge.php">PJH Lounge</a></li>
+    </ul>
+  </li>
+
 
                      <?php if( isset($_SESSION['username']) && !empty($_SESSION['username']) )
                     {
@@ -92,7 +95,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   <div class="card-body">
     <h5 class="card-title">Content for PJH Lounge</h5>
     <p class="card-text">Here you will be able to manage everything that is displayed on the PJH Lounge Demo</p>
-    <a href="pjh-cms.php" class="btn btn-primary">Manage PJH</a>
+    <a href="pjh-cms-pjhlounge.php" class="btn btn-primary">Manage PJH</a>
   </div>
   <div class="card-footer text-muted">
     Last update 2 days ago
