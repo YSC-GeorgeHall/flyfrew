@@ -101,27 +101,39 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <!-- start of container-->
     <div class="container">
 
+        <div class="row">
+            <div class="col-md-12">
+                <form method="post" action="submit-item.php" class="needs-validation" novalidate>
+                    <div class="row">
+                        <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="itemName">Item Name:</label>
+                        <input type="text" class="form-control" id="itemName" name="itemName" required>
+                        <div class="invalid-feedback">Please enter an item name.</div>
+                    </div>
+                        </div>
+                        <div class="col-md-4">
+                    <h3>Options:</h3>
+                    <div id="optionsContainer"></div>
 
-    <form method="post" action="submit-item.php">
-  <label>Item Name:</label>
-  <input type="text" id="itemName" name="itemName">
+                    <button type="button" class="btn btn-primary" onclick="addOption()">Add Option</button>
+                        </div>
+                        <div class="col-md-2">
+                    <input type="submit" class="btn btn-primary" value="Submit">
+                        </div>
+                </form>
+            </div>    
+        </div>
 
-  <h3>Options:</h3>
-  <div id="optionsContainer"></div>
-
-  <button type="button" onclick="addOption()">Add Option</button>
-  <input type="submit" value="Submit">
-</form>
-
-<script>
-  function addOption() {
-    const optionsContainer = document.getElementById("optionsContainer");
-    const optionInput = document.createElement("input");
-    optionInput.type = "text";
-    optionInput.name = "option[]";
-    optionsContainer.appendChild(optionInput);
-  }
-</script>
+            <script>
+            function addOption() {
+                const optionsContainer = document.getElementById("optionsContainer");
+                const optionInput = document.createElement("input");
+                optionInput.type = "text";
+                optionInput.name = "option[]";
+                optionsContainer.appendChild(optionInput);
+            }
+            </script>
 
 
 
