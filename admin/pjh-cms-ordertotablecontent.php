@@ -114,9 +114,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                         </div>
                         <div class="col-md-4">
                             <h3>Options:</h3>
-                            <div id="optionsContainer"></div>
+                            <div id="optionsContainer" class="d-flex flex-wrap"></div>
+<button type="button" class="btn btn-primary mb-3" onclick="addOption()">Add Option</button>
 
-                            <button type="button" class="btn btn-primary" onclick="addOption()">Add Option</button>
                         </div>
                     </div>
                     <div class="row">
@@ -142,19 +142,22 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         </div>
 
         <script>
-        function addOption() {
-            const optionsContainer = document.getElementById("optionsContainer");
-            const optionInput = document.createElement("input");
-            optionInput.type = "text";
-            optionInput.name = "option[]";
-            optionsContainer.appendChild(optionInput);
-        }
+function addOption() {
+    const optionsContainer = document.getElementById("optionsContainer");
+    const optionInput = document.createElement("input");
+    optionInput.type = "text";
+    optionInput.classList.add("form-control", "mr-2");
+    optionInput.name = "option[]";
+    optionsContainer.appendChild(optionInput);
+}
+
 
 
 function addOption2() {
             const optionsContainer2 = document.getElementById("optionsContainer2");
             const optionInput = document.createElement("input");
             optionInput.type = "text";
+                optionInput.classList.add("form-control", "mr-2");
             optionInput.name = "option2[]";
             optionsContainer2.appendChild(optionInput);
         }
