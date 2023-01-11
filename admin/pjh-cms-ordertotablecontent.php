@@ -106,53 +106,78 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 <form method="post" action="submit-item.php" class="needs-validation" novalidate>
                     <div class="row">
                         <div class="col-md-6">
-                    <div class="form-group">
-                        <label for="itemName">Item Name:</label>
-                        <input type="text" class="form-control" id="itemName" name="itemName" required>
-                        <div class="invalid-feedback">Please enter an item name.</div>
-                    </div>
+                            <div class="form-group">
+                                <label for="itemName">Item Name:</label>
+                                <input type="text" class="form-control" id="itemName" name="itemName" required>
+                                <div class="invalid-feedback">Please enter an item name.</div>
+                            </div>
                         </div>
                         <div class="col-md-4">
-                    <h3>Options:</h3>
-                    <div id="optionsContainer"></div>
+                            <h3>Options:</h3>
+                            <div id="optionsContainer"></div>
 
-                    <button type="button" class="btn btn-primary" onclick="addOption()">Add Option</button>
+                            <button type="button" class="btn btn-primary" onclick="addOption()">Add Option</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="itemName2">Item Name:</label>
+                                <input type="text" class="form-control" id="itemName2" name="itemName2" required>
+                                <div class="invalid-feedback">Please enter an item name.</div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h3>Options:</h3>
+                            <div id="optionsContainer2"></div>
+
+                            <button type="button" class="btn btn-primary" onclick="addOption2()">Add Option</button>
                         </div>
                         <div class="col-md-2">
-                    <input type="submit" class="btn btn-primary" value="Submit">
+                            <input type="submit" class="btn btn-primary" value="Submit">
                         </div>
+                    </div>
                 </form>
-            </div>    
+            </div>
         </div>
 
-            <script>
-            function addOption() {
-                const optionsContainer = document.getElementById("optionsContainer");
-                const optionInput = document.createElement("input");
-                optionInput.type = "text";
-                optionInput.name = "option[]";
-                optionsContainer.appendChild(optionInput);
-            }
-            </script>
+        <script>
+        function addOption() {
+            const optionsContainer = document.getElementById("optionsContainer");
+            const optionInput = document.createElement("input");
+            optionInput.type = "text";
+            optionInput.name = "option[]";
+            optionsContainer.appendChild(optionInput);
+        }
 
 
-
-
-
-
-
-            <!-- Footer Start -->
-
-            <!-- Footer End -->
-            </footer>
-            <!-- end of container-->
-        </div>
-
-
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+function addOption2() {
+            const optionsContainer2 = document.getElementById("optionsContainer2");
+            const optionInput = document.createElement("input");
+            optionInput.type = "text";
+            optionInput.name = "option2[]";
+            optionsContainer2.appendChild(optionInput);
+        }
         </script>
+
+
+
+
+
+
+
+        <!-- Footer Start -->
+
+        <!-- Footer End -->
+        </footer>
+        <!-- end of container-->
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
